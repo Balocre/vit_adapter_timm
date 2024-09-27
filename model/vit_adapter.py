@@ -18,12 +18,12 @@ from timm.models._registry import generate_default_cfgs, register_model
 from timm.models.features import feature_take_indices
 from timm.models.vision_transformer import Block
 
-from skynet.modules.vit_adapter import (
+from ..modules.vit_adapter import (
     InteractionBlock,
     SpatialPriorModule,
     deform_inputs,
 )
-from skynet.ops.ms_deform_attn.src.ms_deform_attn import MSDeformAttn
+from ms_deform_attn import MSDeformAttn
 
 
 class ViTAdapter(timm.models.VisionTransformer):
