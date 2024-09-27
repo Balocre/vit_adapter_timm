@@ -8,7 +8,7 @@ import torch.nn as nn
 from timm.layers import DropPath
 from timm.models.vision_transformer import Block
 
-from skynet.ops.ms_deform_attn.src.ms_deform_attn import MSDeformAttn
+from ms_deform_attn import MSDeformAttn
 
 
 class SpatialFeatPyramidDWConv(nn.Module):
